@@ -1,17 +1,101 @@
-* {
-  margin:0px;
-  padding:0px;
+html {
+  /* Setting a base font size of 10px give us easier rem calculations
+     In this case: 1rem === 10px
+   */
+  font-size: 10px;
 }
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #845ec2;
+  margin: 0;
 }
 
-p {
+h1 {
+  font-size: 4.5rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#main {
+  margin: 30px 8px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff6ff;
+}
+
+@media (max-width: 360px) {
+  #main {
+    margin: 0;
+  }
+}
+
+#img-div {
+  background: #fefedf;
+  margin: 0 auto;
+  width: -moz-min-content;
+  width: -webkit-min-content;
+  width: min-content;
+}
+
+#image {
+  padding: 10px;
   display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+#img-caption {
+  font-size: 1.5rem;
+  color: #303040;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 580px) {
+  #img-div {
+    width: auto;
+  }
+  #image {
+    max-width: 95%;
+    height: auto;
+  }
+}
+
+a {
+  color: #477ca7;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #8b008b;
+}
+
+ul {
+  text-align: left;
+  margin: 0 auto 50px auto;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.quotes {
+  list-style-type: none;
+  margin: 0 auto o auto;
+}
+
+.headline {
+  text-align: left;
+  margin: 10px auto 0 18px;
 }
