@@ -35,7 +35,7 @@ html {
    * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
    */
   font-size: 62.5%;
-  scroll-behaviour: smooth;
+  scroll-behavior: smooth;
 }
 
 /* A few media query to set some font sizes at different screen sizes.
@@ -82,13 +82,13 @@ body {
   font-weight: 400;
   line-height: 1.4;
   color: var(--main-white);
+  text-align: center;
 }
 
 h1,
 h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  text-align: center;
 }
 
 h1 {
@@ -383,14 +383,7 @@ embed {
 /* Contact section */
 
 .contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 80vh;
-  padding: 0 2rem;
+  padding: 10rem 2rem;
   background: var(--main-dark);
 }
 
