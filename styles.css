@@ -8,6 +8,9 @@
   --main-blue: #437f97;
   --main-green: #008500;
   --main-yellow: #ffb30f;
+  /* Change width&height according to number of tiles defined in .js for a squared container */
+  --tile-width: 5%;
+  --tile-height: 5%;
 }
 
 /* Base reset */
@@ -176,6 +179,62 @@ a {
   width: inherit;
   height: inherit;
   z-index: -1;
+}
+
+polyline {
+  fill: #008500;
+}
+
+.tile {
+  float: left;
+  width: var(--tile-width);
+  height: var(--tile-height);
+}
+
+.flicker-1 {
+  animation: flicker-linear 2.5s linear;
+}
+.flicker-2 {
+  animation: flicker-ease 2.9s ease;
+}
+.flicker-3 {
+  animation: flicker-ease-in 2.9s ease-in;
+}
+
+@keyframes flicker-linear {
+  0% {
+    fill: #008500;
+  }
+  50% {
+    fill: rgba(0, 200, 0, 0.5);
+  }
+  100% {
+    fill: #008500;
+  }
+}
+
+@keyframes flicker-ease {
+  0% {
+    fill: #008500;
+  }
+  50% {
+    fill: rgba(0, 200, 0, 0.5);
+  }
+  100% {
+    fill: #008500;
+  }
+}
+
+@keyframes flicker-ease-in {
+  0% {
+    fill: #008500;
+  }
+  50% {
+    fill: rgba(0, 200, 0, 0.5);
+  }
+  100% {
+    fill: #008500;
+  }
 }
 
 #border-right {
