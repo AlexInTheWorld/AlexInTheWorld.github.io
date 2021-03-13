@@ -198,7 +198,7 @@ polyline {
   animation: flicker-ease 2.9s ease;
 }
 .flicker-3 {
-  animation: flicker-ease-in 2.9s ease-in;
+  animation: flicker-ease-in 2s ease-in;
 }
 
 @keyframes flicker-linear {
