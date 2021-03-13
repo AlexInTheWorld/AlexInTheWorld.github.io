@@ -6,7 +6,7 @@
   --main-red: #fd151b;
   --main-dark: #01295f;
   --main-blue: #437f97;
-  --main-green: #849324;
+  --main-green: #008500;
   --main-yellow: #ffb30f;
 }
 
@@ -168,6 +168,16 @@ a {
   background-color: green;
 }
 
+#background {
+  background-color: var(--main-green);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  z-index: -1;
+}
+
 #border-right {
   position: absolute;
   top: 0;
@@ -201,34 +211,6 @@ a {
   width: 8%;
   z-index: 5;
   opacity: 0.1;
-}
-
-#border-center1 {
-  position: absolute;
-  top: 0;
-  left: 20vw;
-  height: 15vh;
-  background: linear-gradient(rgba(253, 21, 27, 0.8), rgba(0, 256, 0, 0.54)),
-    url("https://cdn.pixabay.com/photo/2018/03/23/13/17/concept-3253681_960_720.jpg")
-      no-repeat fixed;
-  background-size: cover;
-  width: 7%;
-  z-index: 5;
-  opacity: 0.2;
-}
-
-#border-center2 {
-  position: absolute;
-  top: 0;
-  right: 20vw;
-  height: 30vh;
-  background: linear-gradient(rgba(253, 21, 27, 0.99), rgba(0, 256, 0, 0.2)),
-    url("https://cdn.pixabay.com/photo/2018/03/23/13/17/concept-3253681_960_720.jpg")
-      no-repeat fixed;
-  background-size: cover;
-  width: 7%;
-  z-index: 5;
-  opacity: 0.2;
 }
 
 .welcome-section > p {
